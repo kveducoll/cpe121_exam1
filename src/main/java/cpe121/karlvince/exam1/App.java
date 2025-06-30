@@ -20,12 +20,12 @@ public class App {
         
         do {
         clear();
-        print("HR Control Lite"); newl();
+        print("HR Control Lite [UNFINISHED PRODUCT]"); newl();
         drawLine(LINE, '-'); newl();
         
         print("[1] Register an Employee"); newl();
         print("[2] Get report"); newl();
-        print("[3] Exit"); newl(2);  
+        print("[3] Exit"); newl(2);
 
         print("> "); choice = in.readLine();
 
