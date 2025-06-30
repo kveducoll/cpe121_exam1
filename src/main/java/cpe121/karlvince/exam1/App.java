@@ -24,7 +24,7 @@ public class App {
         drawLine(LINE, '-'); newl();
         
         print("[1] Register an Employee"); newl();
-        print("[2] Get detailed report"); newl();
+        print("[2] Get report"); newl();
         print("[3] Exit"); newl(2);  
 
         print("> "); choice = in.readLine();
@@ -66,13 +66,13 @@ public class App {
             }
             else if (Integer.parseInt(choice) == 2) {
                 clear();
-                print("HR Control Lite - Detailed Report"); newl();
+                print("HR Control Lite - Report"); newl();
                 drawLine(LINE, '-'); newl();
                 newl();
-                print("Total payroll        : %.2f", FullTimeEmployee.getTotalPayroll()); newl();
-                print("Average salary       : %.2f", FullTimeEmployee.getAverageSalary()); newl();
-                print("Highest salary       : %.2f", FullTimeEmployee.getHighestSalary()); newl();
-                print("Number of Employees  : %d", FullTimeEmployee.getEmployeeCount()); newl();
+                print("Total payroll        : PHP %.2f", FullTimeEmployee.getTotalPayroll()); newl();
+                print("Average salary       : PHP %.2f", FullTimeEmployee.getAverageSalary()); newl();
+                print("Highest salary       : PHP %.2f | %s", FullTimeEmployee.getHighestSalary(), FullTimeEmployee.getHighestSalaryName()); newl();
+                print("Number of Employees  : %d", FullTimeEmployee.getEmployeeCount()); newl(2);
                 print("Press Enter to return");
                 in.readLine();
             }

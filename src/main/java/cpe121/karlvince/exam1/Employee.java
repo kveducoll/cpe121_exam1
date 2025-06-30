@@ -61,6 +61,20 @@ public class Employee {
         return getTotalPayroll() / count;
     }
 
+    public String getHighestSalaryName() {
+            if (count == 0) return "N/A";
+            String name = employeeName[0];
+            double max = employeeSalary[0];
+            for (int i = 1; i < count; i++) {
+                if (employeeSalary[i] > max) {
+                    max = employeeSalary[i];
+                    name = employeeName[i];
+                };
+            }
+
+            return name;
+        }
+
     public double getHighestSalary() {
         if (count == 0) return 0;
         double max = employeeSalary[0];
